@@ -1,39 +1,76 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSEPH KISBYE</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="restyle.css">
-        <script>
-            var count = 0;
-            var dots = setInterval(function(){
-            document.getElementById("resting").innerHTML = "resting" + new Array(count % 5).join('.');
-            count++;
-            }, 750); // sets the speed
-        </script>
+    <!-- bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    </head>
-    <body>
-        <main>
-            <header class="headertext"><span class="kerned">JOSEPH KISBYE</span>
-                <div class="navbar"><a class="navlink" href="index.html" style="text-decoration-style:solid";>ABOUT</a> <a class="navlink" href="work.html">WORK</a> <a class="navlink" href="frogzone.html">THE FROG ZONE</a>
-                </div></header>
-                <div>
-                <span class="headlinetext"><h1>You approach the well...</h1></span>
-                <span class="sitetext"><p><b>Joseph Kisbye</b> is a puckish imp living in Philadelphia, PA.
-                <br><br>He holds degrees in <span class="hovertext">writing<span class="tooltip-text" id="fade"><b>Bachelor's of Fine Arts, Writing</b><br>Pratt Institute (2014)<br>Concentation: Poetry<br>Graduating GPA: 3.8 with Highest Honors</span></span> 
-                     and <span class="hovertext">information technology<span class="tooltip-text" id="fade"><b>Bachelor's of Science, Information Technology</b><br>Western Governor's University (2024)<br>Capstone Project: Custom Private Cloud Storage Solution<br>Graduating GPA: 3.0</span></span> 
-                    as well as various <span class="hovertext">technical certifications<span class="tooltip-text" id="fade">
-                        <b>Information Technology:</b><br>CompTIA A+ (2023)<br>CompTIA Net+ (2023)<br>CompTIA Security+ (2023)<br>LPI Linux Essentials (2023)<br>AWS Cloud Practitioner (2023)<br>ITIL Foundations (2023)<br><br>
-                        <b>Gemology:</b><br>Gemological Institute of America, Applied Jewelry Professional (2021)<br><br>
-                        <b>Wine and Spirits:</b><br>Wine and Spirits Educational Trust, Level One (2015)<br> Wine and Spirits Educational Trust, Level Two (2015)<br>Court of Master Sommeliers, Level One (2017)</span></span>.
-                </p>
-                </span>
-            </div><div class="bottom-sticky">
-            <img class="watermark" src="well shady RR.png"></div>
-            </main>
-    </body>
+    <!-- custom style-->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container px-6 my-5">
+            <a href="index.html" class="navbar-brand">
+                <span>JOSEPH KISBYE</span>
+            </a>
+            <!-- mobile navigation toggle-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="writing.html">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body content -->
+    <section id="LANDING">
+        <div class="container my-5 ">
+            <div class="row justify-content-center">
+    
+                <div class="col-sm-6 col-md-6">
+                    <h1 class="pt-1 pb-2 px-2 mb-0 text-center border-bottom rounded-bottom border-dark">You approach the well...</h1>
+    
+                    <!-- vertical line -->
+                    <div class="justify-content-center d-flex" style="height: 40px;">
+                        <div class="vr bg-dark"></div>
+                    </div>
+    
+                    <!-- buttons-->
+                    <div class="text-center mt-0 pt-4 px-0 mx-1 text-center border-top rounded-top border-dark"><a class="landing-button btn btn-outline-dark" href="writing.html">EXAMINE THE BRICKWORK</a></div>
+                    <div class="text-center mt-3"><a class="landing-button btn btn-outline-dark" href="">PONDER ITS DESIGN</a></div>                    
+                    <div class="text-center mt-3"><a class="landing-button btn btn-outline-dark" href="about.html">STEAL A MOMENT'S REST</a></div>
+                    <div class="text-center mt-3 pb-4 border-bottom rounded-bottom border-dark"><a class="landing-button btn btn-outline-dark" href="">SCALE THE WELL'S DEPTH</a></div>
+                </div>
+    
+                <!-- well -->
+                <div class="col-sm-6 col-md-4 align-self-end"><img class="img-fluid" src="/assets/well shady RR.png"></div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
