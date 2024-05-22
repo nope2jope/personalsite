@@ -2,14 +2,47 @@
   transition: all .5s;
 }
 
+
+h1 {
+  font-family: "Raleway", sans-serif;
+
+}
+
+.name-brand {
+  font-family:"Montserrat", sans-serif;
+  font-weight: 500;
+  
+}
+
 .landing-button {
     min-width: 250px;
 }
 
+h4, h5, p, a, .btn {
+  font-family: "Roboto", sans-serif;
+
+}
+
+
 .modal-link {
     text-decoration: underline;
     text-decoration-style: dotted;
+    cursor: pointer;
 }
+
+.blackout {
+  background-color: black;
+  color: whitesmoke;  
+}
+
+.blackout.nav-link:hover{
+  color: white;
+}
+
+.blackout.navbar-brand:hover{
+  color: white;
+}
+
 /* 
 .modal-fullscreen {
     width: 100%;
